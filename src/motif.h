@@ -20,13 +20,17 @@ public:
     double score(std::string);
     
     out& printPWM(fichier out);
-
+    
+	void set_PWM(const std::array<double,4>&);
+	
+	void set_length(const double&);
+	
+	//void set_threshold (const double&);
+	
 private:
 
 	double Length;
 	PositionWeightMatrix PWM;
 	double Threshold;
-	
-	void set_PWM();
-};
 
+};
